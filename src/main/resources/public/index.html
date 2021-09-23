@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+</head>
+
+<body onload='select_language("EN")' ng-init = "langForm.languageCountry = 'EN'; sendForm(langForm)" ng-app="index" ng-controller="AppCtrl">
+    <span lang="EN">Registration form's Main Main v2.0</span>
+    <span lang="UA">Реєстраційна сторінка: Main v2.0</span>
+
+    <div style="margin-left: 20px">
+        <div style="margin-top: 10xp">
+
+
+
+            <div>
+                <input type="radio" value="EN" id="EN" name = "lang"
+                       onclick="select_language(this.value);"
+                       ng-model="langForm.languageCountry"
+                       ng-click="langForm.languageCountry = 'EN'; sendForm(langForm)">
+                <label for="EN">EN</label>
+
+                <input type="radio" value="UA" id="UA" name = "lang"
+                       onclick="select_language(this.value);"
+                       ng-model="langForm.languageCountry"
+                       ng-click="langForm.languageCountry = 'UA'; sendForm(langForm)">
+                <label for="UA">UA</label>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="/js/index.js"></script>
+
+    <script>
+        function select_language(language) {
+            $("[lang]").each(function () {
+                if ($(this).attr("lang").includes(language))
+                    $(this).show();
+                else
+                    $(this).hide();
+            });
+        }
+    </script>
+</body>
+</html>
