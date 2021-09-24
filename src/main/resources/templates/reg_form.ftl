@@ -61,10 +61,14 @@
                 </div>
 
 
-                <button type="submit" class="btn btn-default" style="margin-top:30px" ng-disabled="form.$invalid">
-                    <label lang="EN">Submit</label>
-                    <label lang="UA">Відправити</label>
+                <button lang="EN" type="submit" class="btn btn-default" style="margin-top:30px" ng-disabled="form.$invalid">
+                    Submit
                 </button>
+
+                <button lang="UA" type="submit" class="btn btn-default" style="margin-top:30px" ng-disabled="form.$invalid">
+                    Відправити
+                </button>
+
 
             </form>
         </div>

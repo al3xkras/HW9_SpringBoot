@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ua.testing.registration_form.dto.LanguageDTO;
 import ua.testing.registration_form.dto.NoteDTO;
+import ua.testing.registration_form.entity.Note;
 import ua.testing.registration_form.service.RegFormService;
 
 @Slf4j
@@ -28,9 +29,9 @@ public class RegFormController {
         log.info("{}", note);
     }
 
-    //@ResponseStatus(HttpStatus.CREATED)
+    @ResponseStatus(HttpStatus.CREATED)
     @RequestMapping(value = "/index", method = RequestMethod.POST)
-    public void registrationFormController(LanguageDTO language){
+    public void indexController(LanguageDTO language){
         log.info("{}", language);
     }
 
