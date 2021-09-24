@@ -1,5 +1,5 @@
 angular.module("index",[])
-           .controller("AppCtrl", function ($scope, $http) {
+           .controller("IndexCtrl", function ($scope, $http) {
                $scope.langForm = {languageCountry:"EN"};
 
                $scope.sendForm = function(langForm){

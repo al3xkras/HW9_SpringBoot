@@ -28,7 +28,7 @@ public class RegFormController {
         log.info("{}", note);
     }
 
-    @ResponseStatus(HttpStatus.CREATED)
+    //@ResponseStatus(HttpStatus.CREATED)
     @RequestMapping(value = "/index", method = RequestMethod.POST)
     public void registrationFormController(LanguageDTO language){
         log.info("{}", language);

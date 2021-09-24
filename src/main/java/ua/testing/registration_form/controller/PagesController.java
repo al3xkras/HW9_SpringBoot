@@ -16,7 +16,7 @@ public class PagesController {
         return "index.html";
     }
 
-    @RequestMapping("/form")
+    @RequestMapping("/reg_form")
     public String regForm(){
         return "reg_form";
     }

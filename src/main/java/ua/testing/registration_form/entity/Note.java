@@ -13,4 +13,5 @@ public class Note {
     private Long id;
     private String names;
     private String login;
+    private String password;
 }

@@ -8,14 +8,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 </head>
 
-<body onload='select_language("EN")' ng-init = "langForm.languageCountry = 'EN'; sendForm(langForm)" ng-app="index" ng-controller="AppCtrl">
+<body onload='select_language("EN");' ng-init = "langForm.languageCountry = 'EN'; sendForm(langForm)" ng-app="index" ng-controller="IndexCtrl">
     <span lang="EN">Registration form's Main Main v2.0</span>
     <span lang="UA">Реєстраційна сторінка: Main v2.0</span>
 
     <div style="margin-left: 20px">
         <div style="margin-top: 10xp">
-
-
 
             <div>
                 <input type="radio" value="EN" id="EN" name = "lang"
@@ -30,7 +28,17 @@
                        ng-click="langForm.languageCountry = 'UA'; sendForm(langForm)">
                 <label for="UA">UA</label>
 
+
             </div>
+
+            <span lang="EN">
+                <a href='reg_form/?language=EN'>Registration page</a>
+            </span>
+            <span lang="UA">
+                <a href='reg_form/?language=UA'>Реєстраційна сторінка</a>
+            </span>
+
+
 
         </div>
     </div>
